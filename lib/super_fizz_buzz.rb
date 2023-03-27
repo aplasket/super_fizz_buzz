@@ -1,29 +1,20 @@
 # Iterate through the numbers 1 to 1000
 # For each one, print the output according to the rules of Super Fizz Buzz
-numbers = [1..20]
+numbers = (1..10)
 numbers.each do |number|
- until number == 20
     if number % 3 == 0 && number % 5 == 0 && number % 7 ==0
-      'SuperFizzBuzz'
-      number = number += 1
+      p 'SuperFizzBuzz'
     elsif number % 3 == 0 && number % 7 == 0
-      'SuperFizz'
-      number = number += 1
+      p 'SuperFizz'
     elsif number % 5 == 0 && number % 7 == 0
-      'SuperBuzz'
-      number = number += 1
+      p 'SuperBuzz'
     elsif number % 3 == 0
-      'Fizz'
-      number = number += 1
+      p 'Fizz'
     elsif number % 5 == 0
-      'Buzz'
-      number = number += 1
+      p  'Buzz'
     elsif number % 7 == 0
-      'Super'
-      number = number += 1
+      p 'Super'
     else
-      number
-      number = number += 1
+      p number
     end
-  end
 end
